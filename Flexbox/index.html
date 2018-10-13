@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex</title>
+    <style>
+        @media(min-width:760px){
+            .container-one{
+            display: flex;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* flex-direction: column; */
+
+        }
+        .container-two{
+            display: flex;
+            /* justify-content: flex-start;  DEFAULT */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
+
+
+        }
+        }
+        .container-three{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+        }
+        
+        .container-one div , .container-two div, .container-three div{
+            border: 1px #ccc solid;
+            padding: 10px;
+            
+        }
+        .box-1{
+            flex: 3;
+            order: 1;
+        }
+        .box-2{
+            flex: 1;
+            order: 3;
+        }
+        .box-3{
+            flex: 2;
+            order: 2;
+        }
+        .cbox{
+          flex-basis: 20%;
+           /* width: 20%;  */
+        }
+        .cbox-3{
+            flex-basis: 15%;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Introduction To CSS Flex</h2>
+    <p>One of the most defining features of the flex layout is its ability to form-fit, based on its viewing environment. Flex boxes can adjust in size—either decreasing, to avoid unnecessarily monopolizing space, or increasing to make room for contents to be constrained within its boundaries. </p>
+    <div >No Flots</div>
+    <div >Responsive and mobile frinedly</div>
+    <div >Positioning child element much esier</div>
+    <div >Flex containers margins do not collapse with the margin of it's contanits</div>
+    <div >Order of elements can easily bd cahnged without editing the source html</div>
+    
+
+<hr>
+    <h1 style="text-align:center;">Start Here</h1>
+    <div class="container-one">
+        <div class="box-1">
+            <h3>Box One</h3>
+            <p>the container can be defined as either flex or inline-flex.</p>
+        </div>
+        <div class="box-2">
+            <h3>Box Two</h3>
+            <p>Any text within the container element is wrapped in an unknown flex item.</p>
+        </div>
+        <div class="box-3">
+            <h3>Box Three</h3>
+            <p>Establishes main axis. Possible arguments: row (default), row-reverse, column, column-reverse.</p>
+        </div>
+    </div>
+    <div class="container-two">
+        <div class="cbox">
+            <h3>Box One</h3>
+            <p>the container can be defined as either flex or inline-flex.</p>
+        </div>
+        <div class="cbox">
+            <h3>Box Two</h3>
+            <p>Any text within the container element is wrapped in an unknown flex item.</p>
+        </div>
+        <div class="cbox">
+            <h3>Box Three</h3>
+            <p>Establishes main axis. Possible arguments: row (default), row-reverse, column, column-reverse.</p>
+        </div>
+    </div>
+    <div class="container-three">
+        <div class="cbox-3">
+            <h3>Box One</h3>
+            <p>the container can be defined as either flex or inline-flex.</p>
+        </div>
+        <div class="cbox-3">
+            <h3>Box Two</h3>
+            <p>Any text within the container element is wrapped in an unknown flex item.</p>
+        </div>
+        <div class="cbox-3">
+            <h3>Box Three</h3>
+            <p>Establishes main axis. Possible arguments: row (default), row-reverse, column, column-reverse.</p>
+        </div>
+    <div class="cbox-3">
+            <h3>Box Four</h3>
+            <p>the container can be defined as either flex or inline-flex.</p>
+        </div>
+        <div class="cbox-3">
+            <h3>Box Five</h3>
+            <p>Any text within the container element is wrapped in an unknown flex item.</p>
+        </div>
+        <div class="cbox-3">
+            <h3>Box Six</h3>
+            <p>Establishes main axis. Possible arguments: row (default), row-reverse, column, column-reverse.</p>
+    </div>
+    <div class="cbox-3">
+            <h3>Box Seven</h3>
+            <p>the container can be defined as either flex or inline-flex.</p>
+        </div>
+        <div class="cbox-3">
+            <h3>Box Eight</h3>
+            <p>Any text within the container element is wrapped in an unknown flex item.</p>
+        </div>
+        <div class="cbox-3">
+            <h3>Box Nine</h3>
+            <p>Establishes main axis. Possible arguments: row (default), row-reverse, column, column-reverse.</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
