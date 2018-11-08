@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Css Grid part 3</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 1em;
+            justify-items: end;
+            align-items: center;
+            
+        }
+        
+
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 4</div>
+        <div class="box box3">Box 4</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</body>
+
+</html>

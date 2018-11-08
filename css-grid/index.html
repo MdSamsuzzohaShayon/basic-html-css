@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+    <style>
+        .wrapper {
+            display: grid;
+            /* NO METTER HOW MANY DIV WE HAVE IT WILL FOLLOW 40% 30% 30%  */
+            grid-template-columns: 40% 30% 30%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+            grid-gap: 1em;
+        }
+
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size,
+            position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout
+            enables an author to align elements into columns and rows.
+        </div>
+        <div>
+            CSS Grid Layout excels at dividing a page into major regions
+        </div>
+        <div>
+            CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size,
+            position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout
+            enables an author to align elements into columns and rows.
+        </div>
+        <div>
+            CSS Grid Layout excels at dividing a page into major regions
+        </div>
+    </div>
+</body>
+
+</html>
