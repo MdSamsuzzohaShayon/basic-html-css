@@ -50,7 +50,7 @@
 
  13. Which of these elements are deprecated in HTML5?
 
- Ans: *<center>, <font>*
+ Ans: *`<center>, <font>`*
 
  14. Select the valid content sectioning elements:(Choose all that apply)
 
