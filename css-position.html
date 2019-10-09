@@ -1,0 +1,71 @@
+<!-- https://www.youtube.com/watch?v=jx5jmI0UlXU -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Position</title>
+    <style>
+        * {
+            color: aliceblue;
+        }
+
+        .wrapper {
+            width: 60%;
+            margin-left: 20%;
+        }
+
+        .parent,
+        .child {
+            padding: 15px;
+        }
+
+        .parent {
+            background: rgb(43, 32, 42);
+        }
+
+        .child {
+            background: rgb(27, 92, 70);
+            border: 1px solid blue;
+        }
+
+        .child-one {
+            /* STATIC IS DEFAULT POSITION BY CSS  */
+            /* position: static;   */
+
+            /* RELATIVE ALMOST SAME AS STATIC BUT IT HAS OPTION TO MOVE LEFT, RIGHT, TOP, BOTTOM . IT DOES OVERFLOW */
+            /* position: relative;
+            left: 100px; */
+
+            /* IT'S COMPLETLY REMOVED FROM DOCUMENT FLOW AND UNLIKE RELATIVE IT MOVE TOM, BOTTOM, LEFT, RIGHT FROM THE VERY BEGANNING OF THE SCREEN */
+            /* AND IF I SET PARENT ELEMENT POSITION RELATIVE IT WILL START FROM TOP BEGANNING OF PARENT  AND LEFT BEGANNING OF PARENT */
+            position: absolute;
+            left: 0;
+            top: 0;
+
+
+        }
+
+        .child-two {}
+
+        .child-three {}
+
+        /* Static position  is the default position */
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="parent">
+            Parent
+            <div class="child-one child">One </div>
+            <div class="child-two child">Two</div>
+            <div class="child-three child">Three</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
