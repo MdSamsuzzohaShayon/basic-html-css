@@ -23,6 +23,7 @@
         }
 
         .parent {
+            position: relative;
             background: rgb(43, 32, 42);
         }
 
@@ -41,9 +42,14 @@
 
             /* IT'S COMPLETLY REMOVED FROM DOCUMENT FLOW AND UNLIKE RELATIVE IT MOVE TOM, BOTTOM, LEFT, RIGHT FROM THE VERY BEGANNING OF THE SCREEN */
             /* AND IF I SET PARENT ELEMENT POSITION RELATIVE IT WILL START FROM TOP BEGANNING OF PARENT  AND LEFT BEGANNING OF PARENT */
-            position: absolute;
+            /* position: absolute;
             left: 0;
-            top: 0;
+            top: 0; */
+
+
+            /* IT ALMOST SAME AS ABSOLUTE. IT NOTHING TO DO WITH PARENT. WORK WITH ENTIRE HTML. STAY IN THE SAME PLACE */
+            /* position: fixed;
+            left: 0; */
 
 
         }

@@ -18,5 +18,13 @@ top: 0;
  ```
  
  no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
- - **fixed** : It is positioned relative to the initial containing block established by the viewport
+ 
+ - **fixed** : IT ALMOST SAME AS ABSOLUTE. IT NOTHING TO DO WITH PARENT. WORK WITH ENTIRE HTML. STAY IN THE SAME PLACE 
+
+ ```
+position: fixed;
+left: 0;
+ ```
+
+ It is positioned relative to the initial containing block established by the viewport
  - **sticky** : relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
