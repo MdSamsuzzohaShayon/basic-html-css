@@ -1,0 +1,29 @@
+// MAKING FUNCTION AS MIXIN WITH PARAMETERS
+@mixin flexCenter($direction) {
+    height: 100vh  - 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: $direction;
+        
+}
+
+header{
+    // INCLUDING THE FUNCTION
+    @include flexCenter(column);
+    background: lightblue;
+    height: 100vh - 30vh; //MATH OPERATION
+    
+
+    color: $textColor; //USING  VARIABLE
+    // NESTING CHILD ELEMENT
+    button{ 
+        background: $primaryButton;  
+    }
+    &:hover{
+        background: black;
+    }
+    &::after{
+        content: "hello";
+    }
+}

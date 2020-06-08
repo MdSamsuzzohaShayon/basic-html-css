@@ -1,0 +1,61 @@
+header, .extend {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: lightblue;
+  height: 70vh;
+  color: #ff9dff;
+}
+
+header button, .extend button {
+  background: #2a3a31;
+}
+
+header:hover, .extend:hover {
+  background: black;
+}
+
+header::after, .extend::after {
+  content: "hello";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.contact {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #2a3a31;
+}
+
+.contact button {
+  background: #2a3a31;
+}
+
+.extend {
+  background: #240101;
+}
+/*# sourceMappingURL=style.css.map */

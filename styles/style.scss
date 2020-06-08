@@ -1,0 +1,19 @@
+@import "./variables";
+@import './_header';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.contact {
+    @include flexCenter(row); // USING FUNCTIONS
+    background: $primaryButton;
+}
+.contact button{
+    background: $primaryButton;
+}
+
+.extend{
+    @extend header; // INHARITANCE OTHER ELEMENT STYLE
+    background: rgb(36, 1, 1);
+}
