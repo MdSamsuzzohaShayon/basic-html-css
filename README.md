@@ -28,3 +28,18 @@ left: 0;
 
  It is positioned relative to the initial containing block established by the viewport
  - **sticky** : relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
+
+
+ # SASS
+
+direct scss file will not work with html we need to compile .
+There is two main way to compile it to css
+
+ 1. by using npm package 
+
+ ```
+ npm install -g sass
+ sass --watch scss/style.scss css/style.css
+ ```
+
+ 2. use a extension in vsc name **live sass compiler**
