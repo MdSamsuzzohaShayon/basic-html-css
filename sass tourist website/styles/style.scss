@@ -1,0 +1,119 @@
+@import "./variable";
+@import './menu';
+
+
+
+
+@mixin container{
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+@mixin flexPro($jc, $ai, $fw, $fd) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+    flex-direction: $fd;
+}
+
+@mixin fontStyle($ff, $fs, $lh){
+    font-family: $ff;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+
+@mixin setBackground($h, $w, $bg){
+    height: $h;
+    width: $w;
+    background: $bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#whole-body-img{
+    @include setBackground(100%, 100%, url(../img/japan.jpg));
+      #whole-body-color{
+        background: $grediantClr;
+        #menu{
+            @include flexPro(space-around, center, wrap, row);
+            border-bottom: 1px solid  white;
+            text-transform: uppercase;
+            @include fontStyle($menuText, 1.2rem, 1em);
+            text-shadow: $shadow;
+            .menu-item{
+                ul{
+                    text-decoration: none;
+                    display: flex;
+  
+                    li{
+                        list-style: none;
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+        #landing{
+            @include container();
+            .land-header{
+                h2{
+                    @include fontStyle($heading, 4.5rem, 3.5rem);
+                    padding: 2rem 0 0 0;
+                }
+                p{
+                    @include fontStyle($bodyText, 1.7rem, 0);
+
+                }
+            }
+            .essential-knowledge{
+                margin-top: 15%;
+                @include flexPro(space-around, center, nowrap, row);
+                .ek{
+                    margin: 1rem;
+                    border-style: solid;
+                    border-width: 1px;
+                    padding: 1em;
+                }
+            }
+        }
+        #favorite-spots{
+            @extend #landing;
+            margin-top: 12em;
+            .spots-header{
+                text-align: center;
+
+                p{
+                    @include fontStyle($bodyText, 1rem, 0);
+                }
+                h4{
+                    @include fontStyle($heading, 2.5rem, 0);
+                }
+            }
+            .spots{
+                @include flexPro(space-between, center, wrap, row);
+                .spots-1{
+                    @include setBackground(300px, 250px, url(../img/japan.jpg));
+                }
+                .spots-2{
+                    @include setBackground(300px, 250px, url(../img/landscape-architecture-sky-building-chateau-palace-826338-pxhere.com.jpg));
+                }
+                .spots-3{
+                    @include setBackground(300px, 250px, url(../img/landscape-grass-plant-sky-field-meadow-1110475-pxhere.com.jpg));
+                }
+                .spots-4{
+                    @include setBackground(300px, 250px, url(../img/pedestrian-architecture-road-street-town-building-1004450-pxhere.com.jpg));
+                }
+                .spot-item{
+                    padding: 1em 0 0 1em;
+                    text-shadow: $shadow;
+                }
+            }
+        }
+      }
+
+
+}

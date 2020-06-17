@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+body {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+#whole-body-img {
+  height: 100%;
+  width: 100%;
+  background: url(../img/japan.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#whole-body-img #whole-body-color {
+  background: linear-gradient(to bottom, #0a002c00, #0a002c2d 15%, #0a002c 85%);
+}
+#whole-body-img #whole-body-color #menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.2rem;
+  line-height: 1em;
+  text-shadow: 2px 2px 5px #121612;
+}
+#whole-body-img #whole-body-color #menu .menu-item ul {
+  text-decoration: none;
+  display: flex;
+}
+#whole-body-img #whole-body-color #menu .menu-item ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+#whole-body-img #whole-body-color #landing, #whole-body-img #whole-body-color #favorite-spots {
+  width: 80%;
+  margin-left: 10%;
+}
+#whole-body-img #whole-body-color #landing .land-header h2, #whole-body-img #whole-body-color #favorite-spots .land-header h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4.5rem;
+  line-height: 3.5rem;
+  padding: 2rem 0 0 0;
+}
+#whole-body-img #whole-body-color #landing .land-header p, #whole-body-img #whole-body-color #favorite-spots .land-header p {
+  font-family: "Tinos", serif;
+  font-size: 1.7rem;
+  line-height: 0;
+}
+#whole-body-img #whole-body-color #landing .essential-knowledge, #whole-body-img #whole-body-color #favorite-spots .essential-knowledge {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+#whole-body-img #whole-body-color #landing .essential-knowledge .ek, #whole-body-img #whole-body-color #favorite-spots .essential-knowledge .ek {
+  margin: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1em;
+}
+#whole-body-img #whole-body-color #favorite-spots {
+  margin-top: 12em;
+}
+#whole-body-img #whole-body-color #favorite-spots .spots-header {
+  text-align: center;
+}
+#whole-body-img #whole-body-color #favorite-spots .spots-header p {
+  font-family: "Tinos", serif;
+  font-size: 1rem;
+  line-height: 0;
+}
+#whole-body-img #whole-body-color #favorite-spots .spots-header h4 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5rem;
+  line-height: 0;
+}
+#whole-body-img #whole-body-color #favorite-spots .spots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#whole-body-img #whole-body-color #favorite-spots .spots .spots-1 {
+  height: 300px;
+  width: 250px;
+  background: url(../img/japan.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#whole-body-img #whole-body-color #favorite-spots .spots .spots-2 {
+  height: 300px;
+  width: 250px;
+  background: url(../img/landscape-architecture-sky-building-chateau-palace-826338-pxhere.com.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#whole-body-img #whole-body-color #favorite-spots .spots .spots-3 {
+  height: 300px;
+  width: 250px;
+  background: url(../img/landscape-grass-plant-sky-field-meadow-1110475-pxhere.com.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#whole-body-img #whole-body-color #favorite-spots .spots .spots-4 {
+  height: 300px;
+  width: 250px;
+  background: url(../img/pedestrian-architecture-road-street-town-building-1004450-pxhere.com.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#whole-body-img #whole-body-color #favorite-spots .spots .spot-item {
+  padding: 1em 0 0 1em;
+  text-shadow: 2px 2px 5px #121612;
+}
+
+/*# sourceMappingURL=style.css.map */
